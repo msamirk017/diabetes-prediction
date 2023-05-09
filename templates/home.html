@@ -1,0 +1,488 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     {% comment %} custom file link {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive-style.css' %}">
+    <!--- bootstrap -->
+    {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"> {% endcomment %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    {% comment %} icon {% endcomment %}
+    <link rel="icon" type="images/jpg" href="static\images\logo1.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDP</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+{% comment %} background = "{% static 'images/dr.jpg' %}" {% endcomment %}
+<!--Navbar section -->
+<header class="header_wrapper">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+           <img src="static\images\diabeteslogo.png" width="100px" hight="100px" class="img-fluid">  
+      </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" {% comment %}aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"{% endcomment %}>
+        {% comment %} <span class="navbar-toggler-icon"></span> {% endcomment %}
+        <i class="fas fa-stream navbar-toggler-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav manu-navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Abouts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#symptoms">Symptoms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0">
+            <a class="nav-link" href="#predict">Predict</a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--Navbar section exit -->
+
+<!--banner section -->
+<section id="home" class="home">
+  <div class="banner_wrapper  wrapper">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 order-md-1 order-2">
+                <h3>Better life Through</h3>
+                <h1>Better health</h1>
+                <p>Join us to a fun and friendly diabetic environment. Our professionals are working so <br>har to see smile on your face that you deserve! We are dedicated about our duties</p>
+                <a href="#" class="main-btn mt-4 fill-btn">Appointment</a>
+                <a href="#" class="main-btn mt-4 ms-3">Learn More</a>
+              </div>
+              <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
+                  <div class="top-right-sec">
+                      <div class="animate-img">
+                          <img class="aimg1" src="./static/images/top-banner-img/woman-brush.png" alt="woman">
+                          <img class="aimg2" src="./static/images/top-banner-img/doctor.png" alt="tri">
+                      </div>
+                      <img class="img-fluid ms-xl-5" src="./static/images/top-banner-img/tri1.png"> 
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="wrapper pb-0">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 col-sm-6 mb-4">
+
+                  <div class="card text-center">
+                      <div class="icon-box">
+                        <img src="static\images\top-banner-img\Appointment-icon.png">
+                      </div>
+                      <div>
+                        <h4>Easy Appointment</h4>
+                        <p> bdfkhv bkbgyb hbvhj bvhj bhbv hb</p>
+                      </div>
+                  </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+
+                  <div class="card text-center">
+                      <div class="icon-box">
+                        <img src="static\images\top-banner-img\Emergency-icon.png">
+                      </div>
+                      <div>
+                        <h4>Emergency</h4>
+                        <p> bdfkhv bkbgyb hbvhj bvhj bhbv hb</p>
+                      </div>
+                  </div>
+                  
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+
+              <div class="card text-center">
+                  <div class="icon-box">
+                    <img src="static\images\top-banner-img\7-Service-icon.png">
+                  </div>
+                  <div>
+                    <h4>Service</h4>
+                    <p> bdfkhv bkbgyb hbvhj bvhj bhbv hb</p>
+                  </div>
+              </div>
+              
+        </div>       
+            
+        
+      </div>
+    </div>
+</section>
+<!--banner section exit -->
+
+<!--about section -->
+<section id="about" class="about_wrapper wrapper"> 
+  <div class="container"> 
+      <div class="row">
+          <div class="col-md-6 mb-mb-0 mb-5">
+              <div class="position-relative">
+                  <img src="./static/images/about/about-banner1.png" class="img-fluid">
+                  <img src="./static/images/about/about-img2.png" class="about animate">
+              </div>
+          </div>
+          <div class="col-md-6 text-center text-md-star">
+            <h2>Welcome to a Family </h2>
+            <p>sdkbfj hvbkjb vkjhg skjfd hbzv kjhdb khjbzk jbd vjhbb</p>
+            <div class="mt-5 card">
+              <div class="about-clinic">
+                <h4> 500+</h4>
+                <p> Happy Patients</p>
+              </div>              
+              <div class="about-clinic">
+                <h4> 88+</h4>
+                <p> Qualified Doctors</p>
+              </div>
+              <div class="about-clinic">
+                <h4> 14+</h4>
+                <p> Year Experience</p>
+              </div>
+              <div class="about-clinic">
+                <h4> 35+</h4>
+                <p> Diabetes Awards</p>
+              </div>
+              <span class="line-1"></span>
+              <span class="line-2"></span>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--about section exit -->
+
+<!--symptoms section -->
+<section id="symptoms" class="symptoms_wrapper wrapper">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12 text-center mb-5">
+              <h3> SYMPTOMS <h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                    <div class="icon-box">
+                      <img src="./static/images/logo1.jpg" width="100px" hight="100px">
+                    </div>
+                    <div>
+                      <h4>Urinating often </h4>
+                      <p>Excessive thirst and increased urination are common diabetes signs. When you have diabetes excess glucose a type of sugar builds up in your blood Your kidneys are forced to work overtime to filter and absorb the excess glucose.</p> 
+                        
+                      <a href="#" class="main-btn mt-4">read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                    <div class="icon-box">
+                      <img src="./static/images/logo1.jpg" width="100px" hight="100px">
+                    </div>
+                    <div>
+                      <h4>Having blurry vision</h4>
+                      <p>Another potential effect from diabetes is swelling of the eye lens, leading to blurry vision. If your blood sugar levels change quickly from low to normal, the shape of your eye's lens can be affected and your vision can be blurred.</p>
+                      <a href="#" class="main-btn mt-4">read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                    <div class="icon-box">
+                      <img src="./static/images/logo1.jpg" width="100px" hight="100px">
+                    </div>
+                    <div>
+                      <h4>Having slow-healing sores</h4>
+                      <p>when you have diabetes, your body produces enzymes and hormones that make your immune system less effective. This can lead to infections that may cause diabetic wounds to take longer to heal and require medical attention.</p>
+                      <a href="#" class="main-btn mt-4">read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                    <div class="icon-box">
+                      <img src="./static/images/logo1.jpg" width="100px" hight="100px">
+                    </div>
+                    <div>
+                      <h4>Feeling tired or weak </h4>
+                      <p> Persons may complain of fatigue along with a variety of symptoms, which may together herald comorbid psychological, medical, metabolic or endocrine, and acute or chronic complications.</p>
+                      <a href="#" class="main-btn mt-4">read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                    <div class="icon-box">
+                      <img src="./static/images/logo1.jpg" width="100px" hight="100px">
+                    </div>
+                    <div>
+                      <h4>Feeling irritable </h4>
+                      <p>
+                        Among diabetic, higher blood glucose, or hyperglycemia, has historically been associated with anger or sadness, while blood sugar dips, or hypoglycemia, has been associated with nervousness.</p>
+                      
+                      <a href="#" class="main-btn mt-4">read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                    <div class="icon-box">
+                      <img src="./static/images/logo1.jpg" width="100px" hight="100px">
+                    </div>
+                    <div>
+                      <h4>Getting a lot of infections</h4>
+                      <p>The most common infections in people with diabetes include: Ear, nose, and throat infections: Fungal infections of the nose and throat are seen almost exclusively in patients with diabetes.
+                        
+                      </p>
+                      <a href="#" class="main-btn mt-4">read More</a>
+                    </div>
+                </div>
+            </div>              
+      </div>
+  </div>
+</section>
+<!--services section exit -->
+
+<!--team section-->
+<section id="team" class="team_wrapper wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center mb-5">
+                <h3 class="text-black"> Our SPECIALIST </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                    <div class="team-img">
+                        <img src="./static/images/team/team1.png" class="img-fluid">
+                    </div>
+                    <div class="team-info pt-4 text-center">
+                      <h5>Sammy milin</h5>
+                      <p> Specialist </p>
+                      <ul class="social-network">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                      </ul>          
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card rounded-3">
+                  <div class="team-img">
+                      <img src="./static/images/team/team3.png" class="img-fluid">
+                  </div>
+                  <div class="team-info pt-4 text-center">
+                    <h5>santa binte</h5>
+                    <p> Specialist </p>
+                    <ul class="social-network">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                      <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                    </ul>          
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card rounded-3">
+                <div class="team-img">
+                    <img src="./static/images/team/team2.png" class="img-fluid">
+                </div>
+                <div class="team-info pt-4 text-center">
+                  <h5>Salman Ahmed</h5>
+                  <p> Specialist </p>
+                  <ul class="social-network">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                  </ul>          
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!--team section exit-->
+
+<!--gallery section-->
+<section id="gallery" class="gallery_wrapper wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center mb-5">
+                <h3> OUR GALLERY</h3>
+            </div>        
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <img src="./static/images/gallery/1.jpg" class="w-100 h-100">
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+              <img src="./static/images/gallery/2.avif" class="w-100 h-100">
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+              <img src="./static/images/gallery/3.jpg" class="w-100 h-100">
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+              <img src="./static/images/gallery/5.jpg" class="w-100 h-100">
+            </div>
+
+            <div class="col-md-8 col-sm-6 mb-4">
+              <img src="./static/images/gallery/4.jpg" class="w-100 h-100">
+            </div>
+        </div>
+    </div>
+</section>
+<!--gallery section exit-->
+
+<!--testimonial section-->
+<section id="testimonial" class="testimonial_wrapper wrapper  ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3 class="text-block">TESTIMONIAL</h3>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card text-center">
+                  <img src="./static/images/testimonial/client1.png" class="img-fluid">
+                  <h4 class="pt-4 mb-0"> Aliceano Colby</h4>
+                  <p>CEO of Prime IT</p>
+                  
+                </div>
+            </div>
+            <div class="col-xl-9 col-md-8 col-sm-6 ps-md-4 pt-sm-0 pt-4">
+              <h4>Awesome work</h4>
+                  <p> They really took my individual case to heart. their team is very helpful. they all work togather in an impressive way to make sure that my needs were met and i walked out pain free."</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--testimonial section-->
+<section class="appointment_wrapper wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+                <h3>Request your Appointment and start your Diabetes test</h3>
+                <a href="#" class="mt-5 main-btn fill-btn">Request Appointment<a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--blog section-->
+<section id="blog" class="blog_wrapper wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center mb-5">
+              <h3 class="text-black">Latest Blog</h3>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card p-0 border-0 rounded-0 ">
+                <img src="./static/images/blog/1.jpg" style="
+                height: 354px">
+                <div class="blog-content">
+                  <h5 class="text-white mb-4">Diabetes insurance with benefits</h5>
+                  <h6 class="text-white"> By Admin - March 10, 2023 </h6>
+                  <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur, itaque eos ab doloribus illo maxime .</p>
+                  <a href="#" class="main-btn mt-2">Read More</a>
+                </div>
+            </div>
+         </div> 
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card p-0 border-0 rounded-0">
+                  <img src="./static/images/blog/2.jpg">
+                  <div class="blog-content">
+                    <h5 class="text-white mb-4">Diabetes insurance with benefits</h5>
+                    <h6 class="text-white"> By Admin - March 10, 2023 </h6>
+                    <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur, itaque eos ab doloribus illo maxime </p>
+                    <a href="#" class="main-btn mt-2">Read More</a>
+                  </div>
+              </div>
+           </div>
+           <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card p-0 border-0 rounded-0 ">
+                <img src="./static/images/blog/3.jpg">
+                <div class="blog-content">
+                  <h5 class="text-white mb-4">Diabetes insurance with benefits</h5>
+                  <h6 class="text-white"> By Admin - March 10, 2023 </h6>
+                  <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur, itaque eos ab doloribus illo maxime </p>
+                  <a href="#" class="main-btn mt-2">Read More</a>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </div>
+</section>
+<!--blog section-->
+
+<!--predict page-->
+<section id="predict" class="predict_wrapper wrapper">  
+  <div class="container">
+    <div class="row align-items-center">
+      {% comment %} <div class="col-sm-12 text-center">
+        <h1 class="text-block">PREDICTION PAGE</h1>
+      </div> {% endcomment %}
+        <div class="col-md-6 order-md-1 order-2">
+          <h3>WELCOME TO DIABETES PREDICTION</h3>
+          <h1>LETS START THE PREDICTION</h1>
+          <p>Join us to a fun and friendly diabetic environment. Our professionals are working so <br>how to see smile on your face that you deserve! We are dedicated about our duties</p>
+          <form action="predict" class="form">
+            <input class="input" type="submit" value = "STARTED">    
+          </form>                        
+        </div>                   
+    </div>
+  </div>
+</div>         
+   <!--div class="frm">
+      <form action="predict">
+        <input type="submit" value = "lets get started" style="margin-top: 50%;">    
+      </form>        
+    <div--> 
+</section>
+<!--predict page-->
+  
+
+  <!--bootstrap 5 js cdn links -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"> 
+
+</body>
+</html>

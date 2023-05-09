@@ -1,0 +1,17 @@
+Django==4.0.3
+django-admin-rangefilter==0.8.4
+django-adminlte-3==0.1.6
+django-crispy-forms==1.9.0
+django-jazzmin==2.6.0
+django-widget-tweaks==1.4.8
+matplotlib==3.6.0
+matplotlib-inline==0.1.6
+mccabe==0.6.1
+numpy==1.23.3
+pickleshare==0.7.5
+Pillow==9.0.1
+requests==2.27.1
+scikit-image==0.19.3
+scikit-learn==1.1.2
+scipy==1.9.2
+seaborn==0.12.1
